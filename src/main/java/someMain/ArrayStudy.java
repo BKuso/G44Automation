@@ -55,6 +55,7 @@ public class ArrayStudy implements TestInterface {
         for(int i = 0; i < ints.length; i++){
             integerArray[i] = ints[i];
         }
+        System.out.println("");
         integerList.add(4);
         integerList.add(1);
         integerList.add(3);
