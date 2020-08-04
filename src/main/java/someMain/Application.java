@@ -30,6 +30,8 @@ public class Application {
         Test2Class test2 = new Test2Class("Test Two");
         Test2Class test21 = new Test2Class("Test 21");
 
+        System.out.println("This for merge resolution");
+
         test1.printSomethingAsLog("Something");
         test2.printSomethingAsLog("Something");
         test21.getSomeTestName();
