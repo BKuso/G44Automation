@@ -32,6 +32,8 @@ public class Application {
 
         System.out.println("This for merge conflict");
 
+        System.out.println("This for merge resolution");
+
         test1.printSomethingAsLog("Something");
         test2.printSomethingAsLog("Something");
         test21.getSomeTestName();
