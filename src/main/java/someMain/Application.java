@@ -2,18 +2,9 @@ package someMain;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import trainingWithObjects.ParentTestClass;
 import trainingWithObjects.Test2Class;
 import trainingWithObjects.TestClass;
 
-import java.io.FileNotFoundException;
-import java.nio.InvalidMarkException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import static java.lang.Thread.sleep;
 
 public class Application {
 
@@ -37,6 +28,8 @@ public class Application {
         test1.printSomethingAsLog("Something");
         test2.printSomethingAsLog("Something");
         test21.getSomeTestName();
+
+        String carSelectField = "//form/table[@width = '400']/tbody/tr/td/select";
     }
 
 
