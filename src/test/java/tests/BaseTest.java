@@ -22,11 +22,11 @@ public abstract class BaseTest {
 
     @Before
     public void setUp(){
-        System.setProperty("webdriver.chrome.driver",
-                System.getProperty("user.dir") +
-                        "/src/main/resources/drivers/chrome/v84/chromedriver");
         switch (System.getProperty("browser", "chrome")){
             case "chrome":
+                System.setProperty("webdriver.chrome.driver",
+                        System.getProperty("user.dir") +
+                                "/src/main/resources/drivers/chrome/v84/chromedriver");
                 this.driver = new ChromeDriver();
                 break;
             case "firefox":

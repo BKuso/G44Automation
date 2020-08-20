@@ -28,7 +28,7 @@ public class LoginPage extends BasePage{
 
         this.driver.findElement(usernameField).sendKeys(System.getProperty("username"));
         this.driver.findElement(passwordField).sendKeys(System.getProperty("password"));
-        this. driver.findElement(signInButton).click();
+        this.driver.findElement(signInButton).click();
         return new MainPage(this.driver);
     }
 
