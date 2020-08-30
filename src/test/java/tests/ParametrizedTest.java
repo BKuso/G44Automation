@@ -5,25 +5,38 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
 @RunWith(Parameterized.class)
 public class ParametrizedTest{
 
-/*
+    private int param;
+
     @Parameterized.Parameters
     public static Collection<Object[]> data(){
-        List<String> result = new ArrayList<>();
-        result.add("One");
-        result.add("Two");
-        result.add("Three");
-        return result;
+        return Arrays.asList(new Object[][] {
+            {2},
+            {6},
+            {19},
+            {22},
+            {23}
+    });
     }
-*/
+
+    public ParametrizedTest(int parameter){
+        this.param = parameter;
+    }
+
     @Test
-    public void someParamTest(String data){
-        System.out.println(data);
+    public void someParamTest(){
+        System.out.println(this.param);
+    }
+
+    @Test
+    public void someAnotherParamTest(){
+        System.out.println(this.param - 5);
     }
 
 }

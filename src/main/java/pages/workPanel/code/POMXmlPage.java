@@ -1,16 +1,16 @@
-package pages.code;
+package pages.workPanel.code;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pages.BasePage;
+import pages.workPanel.WorkPanelMenu;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class POMXmlPage extends BasePage {
+public class POMXmlPage extends WorkPanelMenu {
 
     public POMXmlPage(WebDriver driver) {
         super(driver);

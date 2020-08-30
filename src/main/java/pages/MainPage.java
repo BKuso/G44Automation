@@ -2,15 +2,16 @@ package pages;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pages.code.CodePage;
+import pages.workPanel.code.CodePage;
 
 import java.util.List;
 
 import static java.lang.Thread.sleep;
 
-public class MainPage extends BasePage{
+public class MainPage extends MainMenu {
 
     public MainPage(WebDriver driver) {
         super(driver);
@@ -26,6 +27,8 @@ public class MainPage extends BasePage{
     public void openCommits(){
         Assert.assertTrue(driver.findElement(commitButton).isDisplayed());
         driver.findElement(commitButton).click();
+        driver.findElement(commitButton).sendKeys(Keys.ENTER);
+        driver.findElement(commitButton);
         try {
             sleep(2000);
         } catch (InterruptedException e) {

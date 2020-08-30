@@ -1,13 +1,13 @@
-package pages.code;
+package pages.workPanel.code;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import pages.BasePage;
+import pages.workPanel.WorkPanelMenu;
 
 import static java.lang.Thread.sleep;
 
-public class CodePage extends BasePage {
+public class CodePage extends WorkPanelMenu {
 
     public CodePage(WebDriver driver) {
         super(driver);
