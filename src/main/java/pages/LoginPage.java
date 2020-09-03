@@ -33,7 +33,7 @@ public class LoginPage extends BasePage{
     }
 
     public LoginPage login(String username, String password){
-
+        log.info(String.format("Введён логин: %s, пароль: %s", username, password));
         this.driver.findElement(usernameField).sendKeys(username);
         this.driver.findElement(passwordField).sendKeys(password);
         this.driver.findElement(signInButton).click();

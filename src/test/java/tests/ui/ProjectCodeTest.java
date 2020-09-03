@@ -1,9 +1,8 @@
-package tests;
+package tests.ui;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import pages.LoginPage;
 import pages.MainPage;
 

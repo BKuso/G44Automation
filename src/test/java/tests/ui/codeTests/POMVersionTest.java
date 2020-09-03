@@ -1,10 +1,10 @@
-package tests.codeTests;
+package tests.ui.codeTests;
 
 import org.junit.Before;
 import org.junit.Test;
 import pages.LoginPage;
 import pages.MainPage;
-import tests.BaseTest;
+import tests.ui.BaseTest;
 
 public class POMVersionTest extends BaseTest {
 
