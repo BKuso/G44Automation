@@ -1,0 +1,39 @@
+{
+  "definitions": {},
+  "type": "array",
+  "default": [],
+  "items":{
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "ccy",
+      "base_ccy",
+      "buy",
+      "sale"
+    ],
+    "properties": {
+      "ccy": {
+        "title": "Ccy",
+        "type": "string",
+        "default": ""
+      },
+      "base_ccy": {
+        "title": "Base_ccy",
+        "type": ["string", "null"],
+        "default": "",
+        "enum": ["UAH"]
+      },
+      "buy": {
+        "title": "Buy",
+        "type": "string",
+        "default": ""
+      },
+      "sale": {
+        "title": "Sale",
+        "type": "string",
+        "default": ""
+      }
+    }
+  }
+
+}

@@ -39,6 +39,15 @@ public class FileHelper {
         return result;
     }
 
+    public static Map<String, String> loadDataForProvider(String filePath){
+        Map<String, String> result = new TreeMap<>();
+        linesFromFile(filePath).forEach(line -> {
+            String[] tempLineArray = line.split(":");
+            result.put(tempLineArray[0], tempLineArray[1]);
+        });
+        return result;
+    }
+
     public static void writeToFile(String filePath, String text){
         List<String> textLines = Arrays.asList(text.split("\n"));
         try {
