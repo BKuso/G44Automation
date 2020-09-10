@@ -1,0 +1,12 @@
+version: "3.2"
+
+services:
+  postgresql:
+    image: postgres:11
+    container_name: database
+    ports:
+    - 5432:5432
+    environment:
+      PGDATA: /var/lib/postgresql/data
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres

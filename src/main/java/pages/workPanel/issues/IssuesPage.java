@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pages.workPanel.WorkPanelMenu;
 
+import static io.restassured.RestAssured.given;
+
 public class IssuesPage extends WorkPanelMenu {
 
     public IssuesPage(WebDriver driver) {

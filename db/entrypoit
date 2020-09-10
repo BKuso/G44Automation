@@ -1,0 +1,5 @@
+CREATE DATABASE automation;
+
+CREATE USER tester WITH PASSWORD 'tester';
+
+CREATE DATABASE tester WITH OWNER=postgres;tester
